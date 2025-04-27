@@ -96,6 +96,8 @@ nav a:hover {
 
 .error {
     background: #a8afee;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 #perroResult {
@@ -139,4 +141,62 @@ nav a:hover {
     margin-top: 10px;
     font-style: italic;
     color: #555;
+}
+/* g.	Responsividad completa: */
+/* Usando media query para aplicar estilos cuando la pantalla tiene 600px o menos*/
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px; /* Reduce body padding en pequeñas pantallas */
+    }
+
+    .container {
+        padding: 0 10px; /* Reduce el contenedor  padding */
+    }
+
+    h1 {
+        font-size: 20px; /* Ajusta el tamaño de los heads*/
+        
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .example-section {
+        padding: 15px; /* Reduce section padding */
+        margin-bottom: 15px; /* Reduce section margin */
+    }
+
+    /* ajusta flexbox layout para móbiles  */
+    .flex-container {
+        flex-direction: column; /* Apila verticalmente los items flex */
+        gap: 10px; 
+    }
+
+    .flex-item {
+        min-width: 100%; /* Ajusta los items flex para obtener la maxima dimención*/
+    }
+
+    /* Ajuste de los grids para móbiles*/
+    .grid {
+        grid-template-columns: 1fr; /* Simple grid en columna*/
+        gap: 10px; /* Reduce los espacios */
+    }
+    .grid-container {
+        grid-template-columns: 1fr; /* Simple grid en columna*/
+        gap: 10px; /* Reduce los espacios */
+    }
+
+    /* Ajusta la escala de imagenes correctamente */
+     .example-section img {
+        max-width: 100%;
+        height: auto;
+     }
+   
+
 }

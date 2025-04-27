@@ -226,7 +226,7 @@ async function pokemonPorNombre() {
     console.log(nombre);
     try {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${nombre}`);
-        if (!response.ok) throw new Error(`<div class="error" > Error: Pokémon ${nombre} no encontrado</div>`);
+        if (!response.ok) throw new Error(`<div class="error" > Error: Pokémon "${nombre}" no encontrado</div>`);
         
         const pokemon = await response.json();
         const abilities = pokemon.abilities.map(a => a.ability.name).join(', ');
