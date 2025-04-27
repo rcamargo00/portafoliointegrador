@@ -219,13 +219,14 @@ function pokemonAleatorio() {
         });
 }
 
+// f.	Manejo avanzado de errores:
 // Ejemplo 4: Pokémon por nombre (Fetch + Async/Await)
 async function pokemonPorNombre() {
     const nombre = document.getElementById('pokemonNombre').value.toLowerCase();
     console.log(nombre);
     try {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${nombre}`);
-        if (!response.ok) throw new Error('Pokémon no encontrado');
+        if (!response.ok) throw new Error(`<div class="error" > Error: Pokémon ${nombre} no encontrado</div>`);
         
         const pokemon = await response.json();
         const abilities = pokemon.abilities.map(a => a.ability.name).join(', ');
@@ -235,6 +236,6 @@ async function pokemonPorNombre() {
             <p>Habilidades: ${abilities}</p>
         `;
     } catch (error) {
-        document.getElementById('nombrePokemonResult').innerHTML = `Error: ${error.message}`;
+        document.getElementById('pokemonNameResult').innerHTML = `${error.message}`;
     }
 }
