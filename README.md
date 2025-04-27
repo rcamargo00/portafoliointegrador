@@ -1,5 +1,7 @@
-Proyecto final - Rodney Camargo - modulo 1
-# Portafolio integrador
+# Módulo 1 – Ejemplos
+Proyecto final - Portafolio integrador</br>
+Rodney Camargo <br>
+Modulo 1</br>
 ## a.	Personalizar el tema
 se ajustaron los coles del estilo **css-examples/styles-dcu.css** para usar una paleta de colores personalizados </br>
 body {</br>
