@@ -10,6 +10,9 @@ body {</br>
     padding: 20px;</br>
     background: #f3f1f1;</br>
   }</br>
+También se añadieron nuevas opciones de navegación para acceder al los ejercicios <br>
+![imagen](https://github.com/user-attachments/assets/4b66470c-9765-4189-9ee4-35b82c8235f6)
+
 
 ## b.	Añadir un nuevo ejemplo de Grid:
 Se crea en el archivo **css-examples/indexgrid.html** mostrando una galería de imágenes con CSS Grid. <br>
