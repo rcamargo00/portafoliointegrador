@@ -1,8 +1,12 @@
+
+/*Resolviendo inciso a.	Personalizar el tema:*/
+/*Resolviendo inciso b.	Añadir un nuevo ejemplo de Grid*/
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
+    background: #f3f1f1;
   }
 
   /* Contenedor fluido */
@@ -10,6 +14,10 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2vw; /* Espaciado relativo */
+  }
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
   }
 
   /* Grilla de tarjetas */
@@ -21,7 +29,7 @@ body {
 
   /* Estilo de cada tarjeta */
   .card {
-    background: #f4f4f4;
+    background: #e2ecc8;
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
@@ -31,5 +39,35 @@ body {
   .card img {
     max-width: 100%; /* Imagen fluida */
     height: auto;
-    border-radius: 4px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Contenedor de galería */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }  
+
+  /* Media Queries avanzadas */
+  /* Pantallas pequeñas */
+  @media (max-width: 600px) {
+    .card {
+      grid-template-columns: 1fr; /* Una columna */
+    }
+  }
+
+  /* Pantallas medianas */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .card {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    }
   }

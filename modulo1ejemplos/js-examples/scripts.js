@@ -115,11 +115,49 @@ function calcularIMC() {
 // Función para cambiar secciones
 function cambiarSeccion(seccionId) {
     document.querySelectorAll('.seccion').forEach(sec => sec.classList.remove('active'));
-    document.querySelectorAll('.boton-menu').forEach(btn => btn.classList.remove('active'));
-    
+    document.querySelectorAll('.boton-menu').forEach(btn => btn.classList.remove('active'));    
     document.getElementById(seccionId).classList.add('active');
     event.target.classList.add('active');
+    if (seccionId==='api_nueva'){obtenerPerroAleatorio()}
 }
+
+// Ejemplo de nueva api
+// respondiendo inciso e. Nuevo consumo de API:
+function obtenerPerroAleatorio(){
+    const dogImage = document.getElementById('dogImage');
+        const fetchDogButton = document.getElementById('boton');
+        const loadingText = document.getElementById('loading');
+
+        async function fetchRandomDogImage() {
+            dogImage.style.display = 'none'; // Hide previous image
+            loadingText.style.display = 'block'; // Show loading text
+
+            try {
+                const response = await fetch('https://dog.ceo/api/breeds/image/random');
+                const data = await response.json();
+
+                if (data.status === 'success') {
+                    dogImage.src = data.message;
+                    dogImage.style.display = 'block'; // mostramos la imagen
+                } else {
+                    console.error('Error fetching dog image:', data.message);
+                    alert('No se pudo cargar la imagen del perro.');
+                }
+            } catch (error) {
+                console.error('Error durante la respuesta:', error);
+                alert('Ocurrió un error al intentar obtener la imagen...');
+            } finally {
+                loadingText.style.display = 'none'; // Hide loading text
+            }
+        }
+
+        // Fetch an image when the page loads
+        fetchRandomDogImage();
+
+        // Add event listener to the button
+        fetchDogButton.addEventListener('click', fetchRandomDogImage);
+}
+
 
 // Ejemplo 1: Obtener Pokémon básico (Promesas)
 function obtenerPokemon() {

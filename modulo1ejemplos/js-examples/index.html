@@ -8,7 +8,8 @@
 <body>
     <nav class="menu">
         <button class="boton-menu active" onclick="cambiarSeccion('funciones')">Funciones Básicas</button>
-        <button class="boton-menu" onclick="cambiarSeccion('api')">Ejemplos con API</button>
+        <button class="boton-menu" onclick="cambiarSeccion('api_nueva')">Nueva API</button>
+        <button class="boton-menu" onclick="cambiarSeccion('api')">Ejemplos con API</button>        
     </nav>
 
    <!-- Sección Funciones Básicas -->
@@ -76,6 +77,18 @@
         </div>
     </div>
     </section>
+    <!-- Sección nueva API -->
+    <section id="api_nueva" class="seccion">
+        <div class="ejemplo-api-nueva">
+            <h2>Imagen aleatoria de Perro </h2>            
+            <button class="boton" onclick="obtenerPerroAleatorio()">Otro Perro</button>
+            <div id="perroResult"  src="#" class="resultado-api" alt="Imagen de un perro aleatorio">
+                <img id="dogImage" src="#" alt="Imagen de un perro aleatorio">
+                <p id="loading">Cargando...</p>
+            </div>
+            
+        </div>        
+    </section>    
    
       <!-- Sección Ejemplos con API -->
     <section id="api" class="seccion">

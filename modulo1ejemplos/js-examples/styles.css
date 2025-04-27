@@ -94,6 +94,21 @@ nav a:hover {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+#perroResult {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);    
+}
+.ejemplo-api-nueva {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);    
+}
+
 .resultado-api {
     margin-top: 15px;
     padding: 15px;
@@ -105,4 +120,19 @@ nav a:hover {
     max-width: 150px;
     display: block;
     margin: 10px 0;
+}
+#dogImage{
+    max-width: 80%;
+            max-height: 400px;
+            border: 5px solid #fff;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            display: none; /* Hide initially */
+            
+}
+#loading {
+    display: none; /* Escondido en un inicio */
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
 }
