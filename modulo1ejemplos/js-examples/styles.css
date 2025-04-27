@@ -120,6 +120,7 @@ nav a:hover {
     padding: 15px;
     background: #e3f2fd;
     border-left: 4px solid #2196F3;
+    
 }
 
 .img-pokemon {
@@ -142,7 +143,7 @@ nav a:hover {
     font-style: italic;
     color: #555;
 }
-/* g.	Responsividad completa: */
+/* g. Responsividad completa: */
 /* Usando media query para aplicar estilos cuando la pantalla tiene 600px o menos*/
 @media (max-width: 600px) {
 
@@ -186,17 +187,21 @@ nav a:hover {
     .grid {
         grid-template-columns: 1fr; /* Simple grid en columna*/
         gap: 10px; /* Reduce los espacios */
+        background-color: #d3d3d3;
+    }
+    .ejemplo {        
+        background-color: #c6e3f3;
+    }
+    .ejemplo-api {
+        background-color: #c6e3f3;
+    }
+    .ejemplo-api-nueva {
+        background-color: #c6e3f3;
     }
     .grid-container {
         grid-template-columns: 1fr; /* Simple grid en columna*/
         gap: 10px; /* Reduce los espacios */
-    }
-
-    /* Ajusta la escala de imagenes correctamente */
-     .example-section img {
-        max-width: 100%;
-        height: auto;
-     }
+    }   
    
 
 }
