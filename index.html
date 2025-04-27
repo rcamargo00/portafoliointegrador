@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <!-- Metadatos básicos -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Portafolio profesional con información sobre mi experiencia, proyectos y habilidades">
+   <meta name="keywords" content="desarrollador web, portafolio, HTML, CSS, proyectos">
+   <meta name="author" content="Rdoney Camargo">
+   
+   <!-- Título de la página -->
+   <title>Mi Portafolio Profesional</title>
+   
+   <!-- Enlace al archivo CSS principal -->
+   <link rel="stylesheet" href="css/main.css">
+   
+   <!-- Fuentes de Google -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   
+   <!-- Favicon -->
+   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header id="inicio">
+        <nav class="navbar">
+            <div class="logo">MiPortafolio</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="modulo1ejemplos/css-examples/index.html">Módulo 1 - CSS</a></li> 
+                <li><a href="modulo1ejemplos/js-examples/index.html">Módulo 1 - JS</a></li> 
+                <li><a href="#contacto">Contacto</a></li>                
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        
+        <div class="hero">
+            <h1>Rodney Camargo Arce</h1>
+            <h2>Desarrollador Web junior</h2>
+            <p>Innovando nuevas experiencias web</p>
+            <a href="#contacto" class="btn-primary">Contáctame</a>
+        </div>
+    </header>
+    
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="profile-image">
+                    <img src="img/Foto_Rod.jpg" alt="Foto de perfil de pepito de los palotes blanco">
+                </div>
+                <div class="profile-info">
+                    <p>Soy un desarrollador sobre la plataforma de Google Earth Engine, que utliza el lenguaje javascript para el procesamiento de grandes volúmenes de datos que se encuentran en repositorios de imágenes de satélite.  </p>
+                    <p>Actualmente trabajo en <span class="highlight">Fundaión Amigos de la Naturaleza (FAN-Bolivia)</span> como responsable técnico en iniciativas regionales RAISG y MApBiomas, enfocado al generación de datos sobre Cambio de cobertura y uso de la tierra, agua superficial y cicatrices de incendios.</p>
+                    <p>Mi objetivo es desarrollar interfaces para la usuarios de Google Earth Engine, que permita generar los datos necesarias sobre el estado de un territorio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección Experiencia -->
+    <section id="experiencia" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - Presente</div>
+                    <div class="timeline-content">
+                        <h3>Desarrollador Web Senior</h3>
+                        <h4>TechSolutions Inc.</h4>
+                        <p>Lidero el desarrollo de aplicaciones web empresariales, implemento arquitecturas escalables y mentorizo a desarrolladores junior.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2018 - 2021</div>
+                    <div class="timeline-content">
+                        <h3>Desarrollador Frontend</h3>
+                        <h4>WebInnovate</h4>
+                        <p>Desarrollé interfaces de usuario responsivas y optimicé el rendimiento de sitios web existentes.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2016 - 2018</div>
+                    <div class="timeline-content">
+                        <h3>Desarrollador Web Junior</h3>
+                        <h4>StartupTech</h4>
+                        <p>Comencé mi carrera profesional creando y manteniendo sitios web para diversos clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="proyecto1.jpg" alt="Imagen del Proyecto 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Responsive</h3>
+                        <p>Desarrollo completo de plataforma de comercio electrónico con panel de administración.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                        </div>
+                        <a href="#" class="btn-secondary">Ver proyecto</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="proyecto2.jpg" alt="Imagen del Proyecto 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Analítico</h3>
+                        <p>Dashboard interactivo para visualización de datos en tiempo real con gráficos dinámicos.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>SASS</span>
+                            <span>D3.js</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="#" class="btn-secondary">Ver proyecto</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="proyecto3.jpg" alt="Imagen del Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Aplicación de Gestión</h3>
+                        <p>Sistema de gestión de proyectos con seguimiento de tareas y colaboración en tiempo real.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Tailwind CSS</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="btn-secondary">Ver proyecto</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección Hobbies -->
+    <section id="hobbies" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Mis Hobbies</h2>
+            <div class="hobbies-container">
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="icon-hiking"></i>
+                    </div>
+                    <h3>Senderismo</h3>
+                    <p>Me encanta explorar nuevas rutas y conectar con la naturaleza durante los fines de semana.</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="icon-book"></i>
+                    </div>
+                    <h3>Lectura</h3>
+                    <p>Disfruto leyendo libros de ciencia ficción y novelas históricas en mi tiempo libre.</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="icon-camera"></i>
+                    </div>
+                    <h3>Fotografía</h3>
+                    <p>La fotografía de paisajes es mi forma de documentar mis viajes y expresar mi creatividad.</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="icon-code"></i>
+                    </div>
+                    <h3>Proyectos Open Source</h3>
+                    <p>Contribuyo a proyectos de código abierto y desarrollo mis propias herramientas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modulo 1 - jemeplos  -->
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-title">Módulo 1 - Ejemplos</h2>
+            <div class="modulo1-ejemplos"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <ul class="contact-list">
+                        <li><i class="icon-email"></i> rodney.camargo.a@gmail.com</li>
+                        <li><i class="icon-phone"></i> +591 70892445</li>
+                        <li><i class="icon-location"></i> Santa Cruz Bolivia</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://bo.linkedin.com/in/rodney-camargo-arce" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/rcamargo00" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/rodneycamargo" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <p>MiPortafolio</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#experiencia">Experiencia</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#hobbies">Hobbies</a></li>
+                        <li><a href="modulo1ejemplos/css-examples/index.html">Módulo 1 - CSS</a></li> 
+                        <li><a href="modulo1ejemplos/js-examples/index.html">Módulo 1 - JS</a></li> 
+                        <li><a href="#contacto">Contacto</a></li>                        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rodney Camargo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.ejemplo {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.boton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.boton:hover {
+    background-color: #45a049;
+}
+
+.resultado {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border-left: 4px solid #4CAF50;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+    width: 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Estilos para la  sección API */
+.seccion {
+    display: none;
+    padding: 20px;
+}
+
+.seccion.active {
+    display: block;
+}
+
+.menu {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.boton-menu {
+    background-color: #2196F3;
+    margin: 0 10px;
+    transition: all 0.3s;
+}
+
+.boton-menu.active {
+    background-color: #0d47a1;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 1rem;
+}
+nav a {
+    color: #ecf0f1;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+.ejemplo-api {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.resultado-api {
+    margin-top: 15px;
+    padding: 15px;
+    background: #e3f2fd;
+    border-left: 4px solid #2196F3;
+}
+
+.img-pokemon {
+    max-width: 150px;
+    display: block;
+    margin: 10px 0;
+}

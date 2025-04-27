@@ -1,0 +1,160 @@
+/* responsive.css - Media queries para diseño responsive */
+
+/* Tablets grandes */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+    /* Variables responsivas */
+    :root {
+        --fs-hero: 3rem;
+        --fs-xxlarge: 1.8rem;
+        --spacing-xl: 4rem;
+    }
+    
+    /* Layouts */
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Timeline */
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-date {
+        right: auto;
+        left: 0;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-date {
+        right: auto;
+        left: 0;
+    }
+    
+    /* Grids responsivos */
+    .two-column-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Móviles grandes */
+@media screen and (max-width: 768px) {
+    /* Variables responsivas */
+    :root {
+        --fs-hero: 2.5rem;
+        --fs-xxlarge: 1.5rem;
+        --spacing-lg: 2rem;
+        --spacing-xl: 3rem;
+    }
+    
+    /* Navegación responsiva */
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: var(--white-color);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        transition: left var(--transition-fast) ease;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        background-color: var(--dark-color);
+        transition: all var(--transition-fast) ease;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    /* Layout de footer */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    /* Grids responsivos */
+    .three-column-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Móviles pequeños */
+@media screen and (max-width: 576px) {
+    /* Variables responsivas */
+    :root {
+        --fs-hero: 2rem;
+        --fs-xxlarge: 1.3rem;
+        --spacing-md: 1.5rem;
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2.5rem;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        margin-bottom: 30px;
+    }
+    
+    /* Grids de proyectos y hobbies */
+    .projects-grid,
+    .hobbies-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-links ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}

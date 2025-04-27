@@ -1,0 +1,56 @@
+/* base.css - Estilos base para elementos HTML */
+
+body {
+    font-family: var(--font-primary);
+    color: var(--dark-color);
+    background-color: var(--white-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: var(--fs-hero);
+}
+
+h2 {
+    font-size: var(--fs-xxlarge);
+}
+
+h3 {
+    font-size: var(--fs-xlarge);
+}
+
+p {
+    margin-bottom: var(--spacing-sm);
+}
+
+a {
+    color: var(--primary-color);
+    transition: color var(--transition-fast) ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+input, 
+textarea {
+    width: 100%;
+    padding: var(--spacing-xs);
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius-sm);
+    transition: border var(--transition-fast) ease;
+}
+
+input:focus, 
+textarea:focus {
+    border-color: var(--primary-color);
+}
+
+button {
+    cursor: pointer;
+}
