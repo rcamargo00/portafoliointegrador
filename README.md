@@ -1,5 +1,5 @@
-Proyecto 
-# portafoliointegrador
+Proyecto final - modulo 1
+# Portafolio integrador
 ## a.	Personalizar el tema
 se ajustaron los coles del estilo **css-examples/styles-dcu.css** para usar una paleta de colores personalizados </br>
 body {</br>
@@ -23,7 +23,7 @@ En el mismo archivo **js-examples/scripts.js** se añade los controles para la v
 Se agergó un ejemplo con otra API gratuita **https://dog.ceo/dog-api/breeds-list** para mostrar aletoreamente al momento de cargar o al momento de presionar un botón la imagen de un Perro.
 
 ## f.	Manejo avanzado de errores:
-Se modifica el ejemplo de PokeAPI para mostrar un mensaje en un <div class="error">, cuando este no se ingresan los datos correctos. 
+Se modifica el ejemplo de PokeAPI para mostrar un mensaje en un **'div class="error"'**, cuando no se ingresan los datos correctos. 
 
 ## g.	Responsividad completa:
 Se logró ajustar el archivo **js-examples/styles.css** para que la sección de ejemplos JS se vea bien en móviles. 
